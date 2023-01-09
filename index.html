@@ -4,10 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HTML 5 Boilerplate</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Calc for things</title>
   </head>
   <body>
-	<script src="index.js"></script>
+    <div style="width: 500px; margin: 20px auto; line-height: 2em">
+      <div>
+        <h3>Basic Inputs</h3>
+        <label for="members">Number of members:</label>
+        <input id="members" type="number" value="30"/>
+        <br/>
+        <label for="monthly-fee">Monthly fee:</label>
+        <input id="monthly-fee" type="number" value="55"/>
+        <br/>
+        <label for="avg-rental-fee">Average hourly rental fee:</label>
+        <input id="avg-rental-fee" type="number" value="25"/>
+        <br/>
+        <label for="hours-open">Hours open per day:</label>
+        <input id="hours-open" type="number" value="18"/>
+        <br/>
+        <label for="member-hours-per-month">Average hours per month booked</label>
+        <input id="member-hours-per-month" type="number" value="5"/>
+        <br/>
+        <label for="monthly-costs">Monthly costs:</label>
+        <input id="monthly-costs" type="number" value="5000"/>
+        <br/>
+        <label for="bays">Number of bays:</label>
+        <input id="bays" type="number" value="1"/>
+        <br/>
+      </div>
+      <div>
+        <h3>Outputs</h3>
+        <label for="member-value">Monthly member value:</label>
+        <input id="member-value" type="number" disabled/>
+        <br/>
+        <label for="monthly-rev">Monthly revenue:</label>
+        <input id="monthly-rev" type="number" disabled/>
+        <br/>
+        <label for="yearly-rev">Yearly revenue:</label>
+        <input id="yearly-rev" type="number" disabled/>
+        <br/>
+        <label for="members-needed">Members needed for breakeven:</label>
+        <input id="members-needed" type="number" disabled/>
+        <br/>
+        <label for="inv-util">Inventory utilization:</label>
+        <input id="inv-util" type="text" disabled/>
+        <br/>
+      </div>
+      <button onclick="calculate()">Calculate</button>
+    </div>
+	  <script src="index.js"></script>
   </body>
 </html>
